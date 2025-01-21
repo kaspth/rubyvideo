@@ -23,7 +23,7 @@ class ActiveSupport::TestCase
     # end
 
     Talk.reindex_all
-    Speaker.rebuild_search_index
+    Speaker.reindex_all
   end
   # Run tests in parallel with specified workers
   parallelize(workers: :number_of_processors)
